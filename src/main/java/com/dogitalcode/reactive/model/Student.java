@@ -11,7 +11,7 @@ import org.springframework.data.relational.core.mapping.Table;
 @Builder
 public class Student {
 
-private Integer id;
+private Long id;
 
 private String firstname;
 
