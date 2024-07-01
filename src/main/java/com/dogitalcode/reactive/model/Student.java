@@ -1,6 +1,7 @@
 package com.dogitalcode.reactive.model;
 
 import lombok.*;
+import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Table;
 
 @Getter
@@ -11,11 +12,12 @@ import org.springframework.data.relational.core.mapping.Table;
 @Builder
 public class Student {
 
-private Long id;
+    @Id
+    private Long id;
 
-private String firstname;
+    private String firstname;
 
-private String lastname;
+    private String lastname;
 
-private int age;
+    private int age;
 }
